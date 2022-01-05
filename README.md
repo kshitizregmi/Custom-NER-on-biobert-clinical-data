@@ -172,9 +172,9 @@ You can see the image like above by opening `http://0.0.0.0:5000` on your browse
 
 # Model Performance on test data
 
-Precision  = 0.9594695319536979
-recall = 0.9594507835975112
-f1-score = 0.9513224382154714
+* Precision  = 0.9594695319536979
+* recall = 0.9594507835975112
+* f1-score = 0.9513224382154714
 
 The result can be seen by running
 
