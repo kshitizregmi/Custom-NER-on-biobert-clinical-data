@@ -41,7 +41,7 @@ We are programmers; therefore, we will download the dataset by writing python co
     git clone git@github.com:kshitizregmi/Custom-NER-on-biobert-clinical-data.git
     ```
 
-2. Goto NER-on-biomedical-disease-data folder and open the terminal and type 
+2. Goto  Custom-NER-on-biobert-clinical-data folder and open the terminal and type 
 
     ```sh
     virtualenv disenv
