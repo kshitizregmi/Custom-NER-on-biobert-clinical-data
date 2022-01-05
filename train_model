@@ -1,0 +1,1 @@
+ ! python3 -m spacy train config.cfg --gpu-id 0 --verbose --output ./ner_demo/training/ --paths.train train.spacy --paths.dev valid.spacy
