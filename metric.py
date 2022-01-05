@@ -1,7 +1,8 @@
 import numpy as np
 
 from itertools import chain
-
+import spacy
+from format_to_spacy import load_data_spacy
 
 
 def calc_precision(pred, true):        
@@ -32,4 +33,15 @@ def evaluate(ner, data ):
         recalls.append(recall)
         f1s.append(calc_f1(precision, recall))
     return {"precision": np.mean(precisions), "recall": np.mean(recalls), "f1score":np.mean(f1s)}
-        
+
+ner = spacy.load(r"ner_demo/training/model-best") #load the best model
+TEST_DATA, _ = load_data_spacy("NERdata/BC5CDR-disease/test.tsv")
+
+score = evaluate(ner,TEST_DATA)
+precision = score['precision']
+recall = score['recall']
+f1_score = score['f1score']
+
+print("Precision  = {}".format(precision))
+print("recall = {}".format(recall))
+print("f1-score = {}".format(f1_score))

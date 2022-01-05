@@ -170,6 +170,18 @@ For the given input text, the output from the custom NER model looks like the fo
 
 You can see the image like above by opening `http://0.0.0.0:5000` on your browser after you run the command `python3 disp_output.py`.
 
+# Model Performance on test data
+
+Precision  = 0.9594695319536979
+recall = 0.9594507835975112
+f1-score = 0.9513224382154714
+
+The result can be seen by running
+
+```python3
+python3 metric.py
+```
+
 # References
 * [Named Entity Recognition using Spacy and Tensorflow](https://aihub.cloud.google.com/u/0/p/products%2F2290fc65-0041-4c87-a898-0289f59aa8ba)
 * [Biobert](https://github.com/dmis-lab/biobert)
